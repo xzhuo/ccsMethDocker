@@ -9,3 +9,5 @@ RUN git clone https://github.com/PengNi/ccsmeth
 WORKDIR /workspace/ccsmeth
 RUN python setup.py build \
     && python setup.py install
+
+RUN conda install -c bioconda -y samtools
