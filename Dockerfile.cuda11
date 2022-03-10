@@ -11,4 +11,4 @@ RUN python setup.py build \
     && python setup.py install
 RUN sed -i 's/from utils\.attention import Attention/from \.utils\.attention import Attention/' /opt/conda/lib/python3.8/site-packages/ccsmeth-0.1.0-py3.8.egg/ccsmeth/models.py
 
-RUN conda install -c bioconda -y samtools
+RUN conda install -c bioconda -y samtools minimap2
