@@ -13,7 +13,7 @@ RUN python setup.py build \
 RUN conda install -c bioconda -y samtools minimap2
 
 # RUN apt install -y vim
-RUN sed -i 's/from utils\.attention import Attention/from \.utils\.attention import Attention/' /opt/conda/lib/python3.8/site-packages/ccsmeth-0.1.0-py3.8.egg/ccsmeth/models.py
-RUN sed -i 's/ffea\[4\] =/tmp\[4\] =/' /opt/conda/lib/python3.8/site-packages/ccsmeth-0.1.0-py3.8.egg/ccsmeth/extract_features.py
-RUN sed -i '361 a \            tmp = list(ffea)' /opt/conda/lib/python3.8/site-packages/ccsmeth-0.1.0-py3.8.egg/ccsmeth/extract_features.py
-RUN sed -i '363 a \            ffea = tuple(tmp)' /opt/conda/lib/python3.8/site-packages/ccsmeth-0.1.0-py3.8.egg/ccsmeth/extract_features.py
+# RUN sed -i 's/from utils\.attention import Attention/from \.utils\.attention import Attention/' /opt/conda/lib/python3.8/site-packages/ccsmeth-0.1.0-py3.8.egg/ccsmeth/models.py
+# RUN sed -i 's/ffea\[4\] =/tmp\[4\] =/' /opt/conda/lib/python3.8/site-packages/ccsmeth-0.1.0-py3.8.egg/ccsmeth/extract_features.py
+# RUN sed -i '361 a \            tmp = list(ffea)' /opt/conda/lib/python3.8/site-packages/ccsmeth-0.1.0-py3.8.egg/ccsmeth/extract_features.py
+# RUN sed -i '363 a \            ffea = tuple(tmp)' /opt/conda/lib/python3.8/site-packages/ccsmeth-0.1.0-py3.8.egg/ccsmeth/extract_features.py
